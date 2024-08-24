@@ -1,0 +1,38 @@
+using System;
+
+class Program
+{
+     static void Main(string[] args)
+     {
+        int inimigosDerrotados;
+        int pontuacaoPorinimigo;
+        int bonusMissao;
+        double multiplicadorTipoinimigo;
+        double multiplicadorDificuldade;
+        double pontuacaoFinal
+
+        Console.WriteLine(" informações da missão")
+        Console.Write("numero de inimigos derrotados: ")
+        int.TryParse(Console.ReadLine(), out inimigosDerrotados);
+
+        Console.Write("pontuação por inimigo: ")
+        int.TryParse(Console.ReadLine(), out pontuacaoPorinimigo);
+
+        Console.Write("bonus por missão: ")
+        int.TryParse(Console.ReadLine(), out bonusMissao);
+
+        Console.Write("multiplicador para tipo de inimigo: ")
+        double.TryParse(Console.ReadLine(), out multiplicadorTipoinimigo);
+
+        Console.Write("multiplicador para tipo de inimigo: ")
+        double.TryParse(Console.ReadLine(), out multiplicadorTipoinimigo);
+
+        Console.WriteLine("missao concluida")
+
+
+
+
+     }
+
+}
+    
