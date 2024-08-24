@@ -1,0 +1,49 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        /*======= Variáveis Auxiliares ======*/
+        int moedasColetadas;
+        int totalMoedas = 0;
+        /*===================================*/
+
+        /*======== Entrada de Dados =========*/
+        Console.WriteLine("======== Recebendo Moedas ========\n");
+
+        Console.Write("Primeira remessa de moedas: ");
+        int.TryParse(Console.ReadLine(), out moedasColetadas);
+        totalMoedas += moedasColetadas;
+
+        Console.Write("Segunda remessa de moedas: ");
+        int.TryParse(Console.ReadLine(), out moedasColetadas);
+        totalMoedas += moedasColetadas;
+
+        Console.Write("Terceira remessa de moedas: ");
+        int.TryParse(Console.ReadLine(), out moedasColetadas);
+        totalMoedas += moedasColetadas;
+
+        Console.Write("Quarta remessa de moedas: ");
+        int.TryParse(Console.ReadLine(), out moedasColetadas);
+        totalMoedas += moedasColetadas;
+
+        Console.Write("Quinta remessa de moedas: ");
+        int.TryParse(Console.ReadLine(), out moedasColetadas);
+        totalMoedas += moedasColetadas;
+        /*===================================*/
+
+        /*========= Cálculo da Pontuação ==========*/
+       
+        /*=========================================*/
+
+        /*========= Saída de Dados ==========*/
+        Console.WriteLine("\n========= Total de Moeda ==========\n");
+        Console.WriteLine($"Agora você possui um total de {totalMoedas} moedas.");
+       
+        /*===================================*/
+
+        Console.WriteLine("\nPressione ENTER para Fechar");
+        Console.ReadLine();
+    }
+}   

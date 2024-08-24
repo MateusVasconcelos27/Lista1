@@ -1,0 +1,43 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        /*======= Variáveis Auxiliares ======*/
+        double velocidade;
+        double tempo;
+        double multiplicadorClimatico;
+        double multiplicadorEstadoVeiculo;
+        double distanciaPercorrida;
+        /*===================================*/
+
+        /*======== Entrada de Dados =========*/
+        Console.WriteLine("======== Carro em Movimento ========\n");
+        Console.Write("Qual é a velocidade do veículo (em km/h): ");
+        double.TryParse(Console.ReadLine(), out velocidade);
+
+        Console.Write("Qual é o tempo de viagem (em horas): ");
+        double.TryParse(Console.ReadLine(), out tempo);
+
+        Console.Write("Qual é o multiplicador para condições climáticas: ");
+        double.TryParse(Console.ReadLine(), out multiplicadorClimatico);
+
+        Console.Write("Qual é o multiplicador para estado do veículo: ");
+        double.TryParse(Console.ReadLine(), out multiplicadorEstadoVeiculo);
+        /*===================================*/
+
+        /*===== Cálculo da Distância Percorrida =====*/
+        distanciaPercorrida = velocidade * tempo * multiplicadorClimatico * multiplicadorEstadoVeiculo;
+        /*===========================================*/
+
+        /*========= Saída de Dados ==========*/
+        Console.WriteLine("\n======== Distância Percorrida ========\n");
+        Console.WriteLine($"Distância Percorrida: {distanciaPercorrida.ToString("0.00")} km");
+        /*===================================*/
+
+        Console.WriteLine("\nPressione ENTER para Fechar");
+        Console.ReadLine();
+    }
+}
+  

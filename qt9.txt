@@ -1,0 +1,46 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        /*======= Variáveis Auxiliares ======*/
+        int forca;
+        int poderArma;
+        double bonusHabilidades;
+        double modificadorCritico;
+        double modificadorTipoArma;
+        double totalAtaque;
+        /*===================================*/
+
+        /*======== Entrada de Dados =========*/
+        Console.WriteLine("======== Cálculo do Poder de Ataque ========\n");
+        Console.Write("Força do Personagem: ");
+        int.TryParse(Console.ReadLine(), out forca);
+
+        Console.Write("Poder da Arma: ");
+        int.TryParse(Console.ReadLine(), out poderArma);
+
+        Console.Write("Bônus de Habilidades: ");
+        double.TryParse(Console.ReadLine(), out bonusHabilidades);
+
+        Console.Write("Modificador Crítico: ");
+        double.TryParse(Console.ReadLine(), out modificadorCritico);
+
+        Console.Write("Modificador Tipo da Arma: ");
+        double.TryParse(Console.ReadLine(), out modificadorTipoArma);
+        /*===================================*/
+
+        /*==== Cálculo do Total de Ataque ====*/
+        totalAtaque = forca + (poderArma * modificadorTipoArma) * bonusHabilidades * modificadorCritico;
+        /*===================================*/
+
+        /*========= Saída de Dados ==========*/
+        Console.WriteLine("\n===== Resultado do Poder de Ataque =====\n");
+        Console.WriteLine($"Total de Ataque: {totalAtaque.ToString("0.00")}");
+        /*===================================*/
+
+        Console.WriteLine("\nPressione ENTER para Fechar");
+        Console.ReadLine();
+    }
+}

@@ -1,0 +1,53 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        /*======= Variáveis Auxiliares ======*/
+        int xpAcumulado;
+        int xpInimigo1;
+        int xpInimigo2;
+        int inimigos1Derrotados;
+        int inimigos2Derrotados;
+        int constanteNivel;
+        int xpTotal;
+        int nivelJogador;
+        /*===================================*/
+
+        /*======== Entrada de Dados =========*/
+        Console.WriteLine("======== Batalha Concluída! ========\n");
+        Console.Write("XP Acumulado: ");
+        int.TryParse(Console.ReadLine(), out xpAcumulado);
+
+        Console.Write("XP por Inimigo Tipo 1: ");
+        int.TryParse(Console.ReadLine(), out xpInimigo1);
+
+        Console.Write("Número de Inimigos Tipo 1 Derrotados: ");
+        int.TryParse(Console.ReadLine(), out inimigos1Derrotados);
+
+        Console.Write("XP por Inimigo Tipo 2: ");
+        int.TryParse(Console.ReadLine(), out xpInimigo2);
+
+        Console.Write("Número de Inimigos Tipo 2 Derrotados: ");
+        int.TryParse(Console.ReadLine(), out inimigos2Derrotados);
+
+        Console.Write("Constante de Nível: ");
+        int.TryParse(Console.ReadLine(), out constanteNivel);
+        /*===================================*/
+
+        /*==== Cálculo de XP e Nível ====*/
+        xpTotal = xpAcumulado + (xpInimigo1 * inimigos1Derrotados) + (xpInimigo2 * inimigos2Derrotados);
+        nivelJogador = xpTotal / constanteNivel;
+        /*================================*/
+
+        /*========= Saída de Dados ==========*/
+        Console.WriteLine("\n===== Resultado da Batalha =====\n");
+        Console.WriteLine($"XP Total: {xpTotal}");
+        Console.WriteLine($"Nível Atual do Jogador: {nivelJogador}");
+        /*===================================*/
+
+        Console.WriteLine("\nPressione ENTER para Fechar");
+        Console.ReadLine();
+    }
+}
