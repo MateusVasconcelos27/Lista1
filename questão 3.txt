@@ -1,0 +1,40 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        float vidainicial
+        float danorecebido
+        float  bonusregeneracao
+        float modificadorequipamento
+        float modificadorabilidade
+        float vidafinal
+
+        Console.WriteLine("battalha: calculo de dano recebido ")
+
+        Console.Write("vida inicial do personagem: ")
+        float.TryParse(Console.ReadLine(), out vidainicial)
+
+        Console.Write("dano recebido: ")
+        float.TryParse(Console.ReadLine(), out danorecebido)
+
+        Console.Write("bonus de regeneração: ")
+        float.TryParse(Console.ReadLine(), out bonusregeneracao)
+
+        Console.Write("valor do modiicador de equipamento do inimgo: ")
+        float.TryParse(Console.ReadLine(), out modificadorequipamento)
+
+        Console.Write("valor do modificador de habilidade do inimigo ")
+        float.TryParse(Console.ReadLine(), out modificadorabilidade)
+
+        Console.WriteLine(" dano calculado")
+
+
+
+        
+
+
+    }
+}
+         
